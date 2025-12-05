@@ -29,8 +29,8 @@ class Settings:
     LLM_MODEL: str = os.getenv("LLM_MODEL", "gpt-4o-mini")  # gpt-4o-mini for 128k context
 
     # Mock Mode Settings (for prototype/testing)
-    # Set to False for real implementations (requires valid OPENAI_API_KEY)
-    USE_MOCK_LLM: bool = os.getenv("USE_MOCK_LLM", "true").lower() == "true"
+    # Defaults to False for production - uses real OpenAI API
+    USE_MOCK_LLM: bool = os.getenv("USE_MOCK_LLM", "false").lower() == "true"
     USE_MOCK_VECTOR_STORE: bool = os.getenv("USE_MOCK_VECTOR_STORE", "false").lower() == "true"
     USE_MOCK_TRIALS_API: bool = os.getenv("USE_MOCK_TRIALS_API", "false").lower() == "true"
 
