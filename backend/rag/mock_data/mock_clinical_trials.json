@@ -1,0 +1,488 @@
+[
+  {
+    "nct_id": "NCT04487080",
+    "title": "MARIPOSA-2: Amivantamab Plus Lazertinib With or Without Chemotherapy in EGFR-Mutant NSCLC After Osimertinib",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Janssen Research & Development",
+    "intervention": "Amivantamab + Lazertinib \u00b1 Chemotherapy",
+    "description": "Study evaluating amivantamab combined with lazertinib with or without chemotherapy in patients with EGFR-mutant locally advanced or metastatic NSCLC who have progressed on or after osimertinib therapy.",
+    "eligibility": "EGFR mutation (exon 19 del or L858R), progression on osimertinib, ECOG 0-1, adequate organ function",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 19 del",
+      "L858R"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04035486",
+    "title": "FLAURA2: Osimertinib With or Without Chemotherapy in EGFR-Mutant NSCLC",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "AstraZeneca",
+    "intervention": "Osimertinib + Pemetrexed/Platinum",
+    "description": "Study comparing osimertinib plus chemotherapy versus osimertinib monotherapy as first-line treatment in patients with EGFR mutation-positive advanced NSCLC.",
+    "eligibility": "EGFR mutation (exon 19 del or L858R), treatment-naive, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 19 del",
+      "L858R"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04538664",
+    "title": "PAPILLON: Amivantamab Plus Chemotherapy in EGFR Exon 20 Insertion NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Janssen Research & Development",
+    "intervention": "Amivantamab + Carboplatin/Pemetrexed",
+    "description": "Study of amivantamab combined with chemotherapy compared with chemotherapy alone as first-line treatment in patients with EGFR exon 20 insertion mutation-positive locally advanced or metastatic NSCLC.",
+    "eligibility": "EGFR exon 20 insertion mutation, treatment-naive, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 20 ins"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04613596",
+    "title": "KRYSTAL-12: Adagrasib vs Docetaxel in KRAS G12C NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Mirati Therapeutics",
+    "intervention": "Adagrasib",
+    "description": "Study comparing adagrasib to docetaxel in patients with KRAS G12C-mutated locally advanced or metastatic NSCLC who have received prior treatment including platinum-based chemotherapy and anti-PD-(L)1 therapy.",
+    "eligibility": "KRAS G12C mutation, prior platinum and immunotherapy, ECOG 0-1",
+    "biomarker": "KRAS",
+    "mutations": [
+      "G12C"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04821622",
+    "title": "CROWN-2: Lorlatinib vs Alectinib in ALK-Positive NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Pfizer",
+    "intervention": "Lorlatinib",
+    "description": "Study comparing lorlatinib with alectinib as first-line treatment in patients with ALK-positive advanced NSCLC.",
+    "eligibility": "ALK rearrangement, treatment-naive, ECOG 0-1",
+    "biomarker": "ALK",
+    "mutations": [
+      "fusion",
+      "rearrangement"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT03515837",
+    "title": "KEYNOTE-789: Pembrolizumab in EGFR-TKI Resistant NSCLC",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Merck",
+    "intervention": "Pembrolizumab + Pemetrexed/Platinum",
+    "description": "Study of pembrolizumab plus pemetrexed and platinum chemotherapy versus placebo plus pemetrexed and platinum chemotherapy in patients with EGFR-mutant NSCLC who progressed on first-line EGFR TKI therapy.",
+    "eligibility": "EGFR mutation, progression on EGFR TKI, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 19 del",
+      "L858R",
+      "T790M"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04767438",
+    "title": "CFT8919 EGFR Degrader in EGFR-Mutant NSCLC",
+    "phase": "Phase I/II",
+    "status": "Recruiting",
+    "sponsor": "C4 Therapeutics",
+    "intervention": "CFT8919",
+    "description": "First-in-human study of CFT8919, a novel EGFR degrader, in patients with EGFR-mutant NSCLC who have progressed on prior EGFR-targeted therapies.",
+    "eligibility": "EGFR mutation, progression on prior EGFR TKI, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "any"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT05132075",
+    "title": "CodeBreaK 300: Sotorasib Plus Panitumumab in KRAS G12C Colorectal Cancer",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Amgen",
+    "intervention": "Sotorasib + Panitumumab",
+    "description": "Study comparing sotorasib plus panitumumab versus standard of care in KRAS G12C-mutated metastatic colorectal cancer.",
+    "eligibility": "KRAS G12C mutation, metastatic CRC, prior chemotherapy",
+    "biomarker": "KRAS",
+    "mutations": [
+      "G12C"
+    ],
+    "cancer_type": "Colorectal"
+  },
+  {
+    "nct_id": "NCT05261399",
+    "title": "Novel Bispecific Antibody in EGFR-Mutant NSCLC",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Academic",
+    "intervention": "EGFR-MET Bispecific",
+    "description": "Study of novel EGFR-MET bispecific antibody in patients with EGFR-mutant NSCLC with acquired resistance to third-generation EGFR TKIs.",
+    "eligibility": "EGFR mutation, osimertinib resistance, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 19 del",
+      "L858R",
+      "C797S"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04592731",
+    "title": "TROPION-Lung01: Datopotamab Deruxtecan in Advanced NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Daiichi Sankyo",
+    "intervention": "Datopotamab deruxtecan",
+    "description": "Study comparing datopotamab deruxtecan to docetaxel in patients with advanced NSCLC who have progressed after platinum-based chemotherapy and PD-1/PD-L1 inhibitor therapy.",
+    "eligibility": "Advanced NSCLC, prior platinum and immunotherapy, ECOG 0-1",
+    "biomarker": "TROP2",
+    "mutations": [],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04862780",
+    "title": "LIBRETTO-431: Selpercatinib vs Chemotherapy in RET Fusion NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Eli Lilly",
+    "intervention": "Selpercatinib",
+    "description": "Study comparing selpercatinib to platinum-based chemotherapy with or without pembrolizumab as first-line treatment in patients with RET fusion-positive advanced NSCLC.",
+    "eligibility": "RET fusion, treatment-naive, ECOG 0-1",
+    "biomarker": "RET",
+    "mutations": [
+      "fusion"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04948853",
+    "title": "DESTINY-Lung03: Trastuzumab Deruxtecan in HER2-Overexpressing NSCLC",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Daiichi Sankyo/AstraZeneca",
+    "intervention": "Trastuzumab deruxtecan",
+    "description": "Study of trastuzumab deruxtecan in patients with HER2-overexpressing NSCLC who have received prior treatment.",
+    "eligibility": "HER2 overexpression (IHC 2+ or 3+), prior chemotherapy, ECOG 0-1",
+    "biomarker": "HER2",
+    "mutations": [
+      "overexpression"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT05168163",
+    "title": "Novel MET Inhibitor in MET-Altered Solid Tumors",
+    "phase": "Phase I/II",
+    "status": "Recruiting",
+    "sponsor": "Pharmaceutical Company",
+    "intervention": "Next-Gen MET Inhibitor",
+    "description": "First-in-human study of a novel MET inhibitor in patients with MET-altered solid tumors including NSCLC with MET exon 14 skipping or MET amplification.",
+    "eligibility": "MET exon 14 skip or MET amplification, ECOG 0-1",
+    "biomarker": "MET",
+    "mutations": [
+      "exon 14 skip",
+      "amplification"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT05108636",
+    "title": "NRG1 Fusion Solid Tumors Basket Trial",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "NCI",
+    "intervention": "Zenocutuzumab",
+    "description": "Basket trial of zenocutuzumab in patients with NRG1 fusion-positive solid tumors.",
+    "eligibility": "NRG1 fusion confirmed, ECOG 0-2",
+    "biomarker": "NRG1",
+    "mutations": [
+      "fusion"
+    ],
+    "cancer_type": "Various"
+  },
+  {
+    "nct_id": "NCT04589845",
+    "title": "Mobocertinib Combination in EGFR Exon 20 Insertion NSCLC",
+    "phase": "Phase I/II",
+    "status": "Recruiting",
+    "sponsor": "Takeda",
+    "intervention": "Mobocertinib + Immunotherapy",
+    "description": "Study of mobocertinib in combination with immunotherapy in patients with EGFR exon 20 insertion-mutated NSCLC.",
+    "eligibility": "EGFR exon 20 insertion, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 20 ins"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT05537025",
+    "title": "First-Line Immunotherapy Combination in Advanced NSCLC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Bristol-Myers Squibb",
+    "intervention": "Nivolumab + Novel Agent",
+    "description": "Study comparing nivolumab plus novel agent versus standard chemotherapy plus immunotherapy as first-line treatment in advanced NSCLC.",
+    "eligibility": "Advanced NSCLC, treatment-naive, PD-L1 any, ECOG 0-1",
+    "biomarker": "PD-L1",
+    "mutations": [],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04930068",
+    "title": "BRAF V600E Solid Tumors Basket Trial",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Array BioPharma/Pfizer",
+    "intervention": "Encorafenib + Binimetinib",
+    "description": "Basket trial of encorafenib plus binimetinib in patients with BRAF V600E-mutated solid tumors.",
+    "eligibility": "BRAF V600E mutation confirmed, ECOG 0-1",
+    "biomarker": "BRAF",
+    "mutations": [
+      "V600E"
+    ],
+    "cancer_type": "Various"
+  },
+  {
+    "nct_id": "NCT05124952",
+    "title": "IO Combination After EGFR TKI Resistance",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Academic",
+    "intervention": "Atezolizumab + Bevacizumab + Chemotherapy",
+    "description": "Study of atezolizumab, bevacizumab, and chemotherapy in EGFR-mutant NSCLC after progression on EGFR TKI therapy.",
+    "eligibility": "EGFR mutation, EGFR TKI progression, ECOG 0-1",
+    "biomarker": "EGFR",
+    "mutations": [
+      "exon 19 del",
+      "L858R"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT05388669",
+    "title": "HER2 ADC in HER2-Mutant Solid Tumors",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Daiichi Sankyo",
+    "intervention": "Trastuzumab deruxtecan",
+    "description": "Study of trastuzumab deruxtecan in patients with HER2-mutant solid tumors.",
+    "eligibility": "HER2 mutation confirmed, ECOG 0-1",
+    "biomarker": "HER2",
+    "mutations": [
+      "mutation"
+    ],
+    "cancer_type": "Various"
+  },
+  {
+    "nct_id": "NCT05395897",
+    "title": "KRYSTAL-7: Adagrasib Plus Pembrolizumab in KRAS G12C NSCLC",
+    "phase": "Phase II",
+    "status": "Recruiting",
+    "sponsor": "Mirati Therapeutics",
+    "intervention": "Adagrasib + Pembrolizumab",
+    "description": "Study of adagrasib in combination with pembrolizumab in patients with KRAS G12C-mutated advanced NSCLC.",
+    "eligibility": "KRAS G12C mutation, treatment-naive or prior therapy, ECOG 0-1",
+    "biomarker": "KRAS",
+    "mutations": [
+      "G12C"
+    ],
+    "cancer_type": "NSCLC"
+  },
+  {
+    "nct_id": "NCT04191135",
+    "title": "DESTINY-Breast04: T-DXd in HER2-Low Breast Cancer",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Daiichi Sankyo/AstraZeneca",
+    "intervention": "Trastuzumab deruxtecan",
+    "description": "Study comparing trastuzumab deruxtecan to physician's choice chemotherapy in HER2-low (IHC 1+ or 2+/ISH-) unresectable or metastatic breast cancer after prior chemotherapy.",
+    "eligibility": "HER2-low breast cancer, HR+/HR-, prior chemotherapy, ECOG 0-1",
+    "biomarker": "HER2-low",
+    "mutations": [],
+    "cancer_type": "Breast"
+  },
+  {
+    "nct_id": "NCT03901339",
+    "title": "KEYNOTE-522: Pembrolizumab in Early TNBC",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Merck",
+    "intervention": "Pembrolizumab + Chemotherapy",
+    "description": "Neoadjuvant pembrolizumab plus chemotherapy followed by adjuvant pembrolizumab in early triple-negative breast cancer.",
+    "eligibility": "Early-stage TNBC T1c N1-2 or T2-4 N0-2, ECOG 0-1",
+    "biomarker": "TNBC",
+    "mutations": [],
+    "cancer_type": "Breast"
+  },
+  {
+    "nct_id": "NCT03691051",
+    "title": "monarchE: Abemaciclib in High-Risk HR+ Early Breast Cancer",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Eli Lilly",
+    "intervention": "Abemaciclib + Endocrine Therapy",
+    "description": "Adjuvant abemaciclib combined with endocrine therapy in high-risk HR+/HER2- early breast cancer.",
+    "eligibility": "HR+/HER2- early breast cancer, node-positive, Ki-67 \u226520%, ECOG 0-1",
+    "biomarker": "HR+",
+    "mutations": [],
+    "cancer_type": "Breast"
+  },
+  {
+    "nct_id": "NCT02810743",
+    "title": "OlympiA: Olaparib in gBRCA Early Breast Cancer",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "AstraZeneca",
+    "intervention": "Olaparib",
+    "description": "Adjuvant olaparib in patients with germline BRCA1/2 mutations and high-risk HER2-negative early breast cancer.",
+    "eligibility": "gBRCA1/2 mutation, HER2-negative, completed neoadjuvant/adjuvant chemotherapy",
+    "biomarker": "BRCA",
+    "mutations": [
+      "BRCA1",
+      "BRCA2"
+    ],
+    "cancer_type": "Breast"
+  },
+  {
+    "nct_id": "NCT04964934",
+    "title": "EMBER-3: Imlunestrant in ER+ Advanced Breast Cancer",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Eli Lilly",
+    "intervention": "Imlunestrant",
+    "description": "Oral SERD imlunestrant vs standard endocrine therapy in ER+/HER2- advanced breast cancer with ESR1 mutation.",
+    "eligibility": "ER+/HER2- metastatic breast cancer, ESR1 mutation, prior CDK4/6 inhibitor",
+    "biomarker": "ESR1",
+    "mutations": [
+      "ESR1"
+    ],
+    "cancer_type": "Breast"
+  },
+  {
+    "nct_id": "NCT05198934",
+    "title": "KRYSTAL-10: Adagrasib + Cetuximab in KRAS G12C CRC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Mirati Therapeutics",
+    "intervention": "Adagrasib + Cetuximab",
+    "description": "Study comparing adagrasib plus cetuximab to chemotherapy in KRAS G12C-mutated metastatic colorectal cancer.",
+    "eligibility": "KRAS G12C mutation, metastatic CRC, prior fluoropyrimidine and oxaliplatin, ECOG 0-1",
+    "biomarker": "KRAS",
+    "mutations": [
+      "G12C"
+    ],
+    "cancer_type": "Colorectal"
+  },
+  {
+    "nct_id": "NCT02912559",
+    "title": "KEYNOTE-177: Pembrolizumab in MSI-H CRC",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Merck",
+    "intervention": "Pembrolizumab",
+    "description": "First-line pembrolizumab versus chemotherapy in MSI-H/dMMR metastatic colorectal cancer.",
+    "eligibility": "MSI-H or dMMR, metastatic CRC, treatment-naive, ECOG 0-1",
+    "biomarker": "MSI-H",
+    "mutations": [],
+    "cancer_type": "Colorectal"
+  },
+  {
+    "nct_id": "NCT04931654",
+    "title": "BREAKWATER: Encorafenib + Cetuximab First-Line in BRAF V600E CRC",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "Pfizer/Array BioPharma",
+    "intervention": "Encorafenib + Cetuximab + Chemo",
+    "description": "First-line encorafenib plus cetuximab with or without chemotherapy in BRAF V600E-mutated metastatic CRC.",
+    "eligibility": "BRAF V600E mutation, metastatic CRC, treatment-naive, ECOG 0-1",
+    "biomarker": "BRAF",
+    "mutations": [
+      "V600E"
+    ],
+    "cancer_type": "Colorectal"
+  },
+  {
+    "nct_id": "NCT05064059",
+    "title": "ctDNA-Guided Adjuvant Therapy in Stage II Colon Cancer",
+    "phase": "Phase III",
+    "status": "Recruiting",
+    "sponsor": "NCI",
+    "intervention": "ctDNA-guided treatment",
+    "description": "Circulating tumor DNA-guided adjuvant chemotherapy in stage II colon cancer.",
+    "eligibility": "Stage II colon cancer, post-resection, ctDNA evaluable",
+    "biomarker": "ctDNA",
+    "mutations": [],
+    "cancer_type": "Colorectal"
+  },
+  {
+    "nct_id": "NCT03068455",
+    "title": "RELATIVITY-047: Relatlimab + Nivolumab in Melanoma",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Bristol-Myers Squibb",
+    "intervention": "Relatlimab + Nivolumab",
+    "description": "First-line relatlimab plus nivolumab versus nivolumab alone in unresectable or metastatic melanoma.",
+    "eligibility": "Unresectable or metastatic melanoma, treatment-naive, ECOG 0-1",
+    "biomarker": "LAG-3",
+    "mutations": [],
+    "cancer_type": "Melanoma"
+  },
+  {
+    "nct_id": "NCT02908672",
+    "title": "COMBI-AD: Dabrafenib + Trametinib Adjuvant in Melanoma",
+    "phase": "Phase III",
+    "status": "Completed",
+    "sponsor": "Novartis",
+    "intervention": "Dabrafenib + Trametinib",
+    "description": "Adjuvant dabrafenib plus trametinib in resected stage III BRAF V600-mutated melanoma.",
+    "eligibility": "Resected stage III melanoma, BRAF V600E/K mutation, ECOG 0-1",
+    "biomarker": "BRAF",
+    "mutations": [
+      "V600E",
+      "V600K"
+    ],
+    "cancer_type": "Melanoma"
+  },
+  {
+    "nct_id": "NCT05445583",
+    "title": "Lifileucel (TIL Therapy) in Advanced Melanoma",
+    "phase": "Phase II/III",
+    "status": "Recruiting",
+    "sponsor": "Iovance Biotherapeutics",
+    "intervention": "Lifileucel (TIL)",
+    "description": "Tumor-infiltrating lymphocyte therapy in advanced melanoma after prior anti-PD-1.",
+    "eligibility": "Unresectable or metastatic melanoma, prior anti-PD-1, ECOG 0-1",
+    "biomarker": "TIL",
+    "mutations": [],
+    "cancer_type": "Melanoma"
+  },
+  {
+    "nct_id": "NCT02977052",
+    "title": "SWOG S1801: Neoadjuvant Pembrolizumab in Stage III/IV Melanoma",
+    "phase": "Phase II",
+    "status": "Completed",
+    "sponsor": "NCI/SWOG",
+    "intervention": "Neoadjuvant Pembrolizumab",
+    "description": "Neoadjuvant plus adjuvant pembrolizumab vs adjuvant pembrolizumab alone in resectable stage III/IV melanoma.",
+    "eligibility": "Resectable stage IIIB-IV melanoma, ECOG 0-1",
+    "biomarker": "PD-1",
+    "mutations": [],
+    "cancer_type": "Melanoma"
+  }
+]

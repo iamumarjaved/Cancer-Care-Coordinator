@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pnpm-store/
+
+# Build outputs
+.next/
+dist/
+build/
+*.egg-info/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+credentials.json
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+*.log
+logs/
+
+# Database and data files (use volumes instead)
+*.db
+*.sqlite
+chroma_db/
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in container)
+*.md
+docs/
+
+# Development files
+Makefile
+docker-compose.override.yml

@@ -1,0 +1,191 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "first_name": "Robert",
+      "last_name": "Thompson",
+      "date_of_birth": "1962-03-15",
+      "sex": "Male",
+      "email": "robert.t@email.com",
+      "phone": "555-0101",
+      "cancer_details": {
+        "cancer_type": "NSCLC",
+        "subtype": "Adenocarcinoma",
+        "stage": "Stage IIIA",
+        "tnm_staging": "T2N2M0",
+        "primary_site": "Right upper lobe",
+        "tumor_size_cm": 3.2,
+        "metastases": ["Mediastinal lymph nodes"],
+        "histology": "Adenocarcinoma, moderately differentiated",
+        "grade": "Grade 2",
+        "diagnosis_date": "2024-01-10"
+      },
+      "comorbidities": [
+        {
+          "condition": "Type 2 Diabetes Mellitus",
+          "severity": "moderate",
+          "treatment_implications": ["Monitor glucose with steroids", "Metformin may need adjustment"]
+        },
+        {
+          "condition": "Chronic Kidney Disease Stage 3",
+          "severity": "moderate",
+          "treatment_implications": ["Reduce cisplatin dose", "Avoid nephrotoxic agents", "GFR 58 mL/min"]
+        }
+      ],
+      "organ_function": [
+        {
+          "organ": "Kidney",
+          "status": "mild_impairment",
+          "key_values": {"gfr": 58, "creatinine": 1.4},
+          "notes": "CKD Stage 3a"
+        },
+        {
+          "organ": "Liver",
+          "status": "normal",
+          "key_values": {"ast": 28, "alt": 32, "bilirubin": 0.8},
+          "notes": "Normal function"
+        },
+        {
+          "organ": "Heart",
+          "status": "normal",
+          "key_values": {"ef": 60, "ecg": "Normal sinus rhythm"},
+          "notes": "No cardiac history"
+        },
+        {
+          "organ": "Bone Marrow",
+          "status": "normal",
+          "key_values": {"wbc": 7.2, "hgb": 13.5, "platelets": 245},
+          "notes": "Adequate for chemotherapy"
+        }
+      ],
+      "ecog_status": 1,
+      "current_medications": ["Metformin 1000mg BID", "Lisinopril 10mg daily", "Atorvastatin 20mg daily"],
+      "allergies": ["Sulfa drugs"],
+      "smoking_status": "former",
+      "pack_years": 30,
+      "genomic_report_id": "NGS001",
+      "clinical_notes": [
+        "62-year-old male with newly diagnosed NSCLC. Former smoker, quit 5 years ago. Presented with cough and hemoptysis.",
+        "CT chest showed 3.2cm RUL mass with mediastinal lymphadenopathy. PET positive in primary and lymph nodes. Brain MRI negative.",
+        "Biopsy confirmed adenocarcinoma. Sent for molecular testing."
+      ]
+    },
+    {
+      "id": "P002",
+      "first_name": "Maria",
+      "last_name": "Garcia",
+      "date_of_birth": "1958-07-22",
+      "sex": "Female",
+      "email": "maria.g@email.com",
+      "phone": "555-0102",
+      "cancer_details": {
+        "cancer_type": "NSCLC",
+        "subtype": "Adenocarcinoma",
+        "stage": "Stage IV",
+        "tnm_staging": "T3N2M1b",
+        "primary_site": "Left lower lobe",
+        "tumor_size_cm": 4.5,
+        "metastases": ["Bone (spine, ribs)", "Adrenal gland"],
+        "histology": "Adenocarcinoma, poorly differentiated",
+        "grade": "Grade 3",
+        "diagnosis_date": "2024-02-01"
+      },
+      "comorbidities": [
+        {
+          "condition": "Hypertension",
+          "severity": "mild",
+          "treatment_implications": ["Well controlled on current regimen"]
+        }
+      ],
+      "organ_function": [
+        {
+          "organ": "Kidney",
+          "status": "normal",
+          "key_values": {"gfr": 85, "creatinine": 0.9},
+          "notes": "Normal function"
+        },
+        {
+          "organ": "Liver",
+          "status": "normal",
+          "key_values": {"ast": 25, "alt": 28, "bilirubin": 0.6},
+          "notes": "Normal function"
+        },
+        {
+          "organ": "Heart",
+          "status": "normal",
+          "key_values": {"ef": 65},
+          "notes": "Normal function"
+        }
+      ],
+      "ecog_status": 1,
+      "current_medications": ["Amlodipine 5mg daily", "Vitamin D 2000 IU daily"],
+      "allergies": [],
+      "smoking_status": "never",
+      "pack_years": 0,
+      "genomic_report_id": "NGS002",
+      "clinical_notes": [
+        "66-year-old never-smoker female with metastatic NSCLC. Presented with back pain, found to have spine mets.",
+        "Never-smoker lung cancers often have targetable mutations. Awaiting NGS results.",
+        "Good performance status, motivated for aggressive treatment."
+      ]
+    },
+    {
+      "id": "P003",
+      "first_name": "James",
+      "last_name": "Wilson",
+      "date_of_birth": "1955-11-08",
+      "sex": "Male",
+      "email": "james.w@email.com",
+      "phone": "555-0103",
+      "cancer_details": {
+        "cancer_type": "NSCLC",
+        "subtype": "Squamous Cell Carcinoma",
+        "stage": "Stage IIIB",
+        "tnm_staging": "T4N2M0",
+        "primary_site": "Right hilum",
+        "tumor_size_cm": 5.8,
+        "metastases": ["Mediastinal lymph nodes", "Contralateral hilar nodes"],
+        "histology": "Squamous cell carcinoma",
+        "grade": "Grade 2",
+        "diagnosis_date": "2024-01-25"
+      },
+      "comorbidities": [
+        {
+          "condition": "COPD",
+          "severity": "moderate",
+          "treatment_implications": ["May limit surgical options", "Monitor pulmonary function"]
+        },
+        {
+          "condition": "Coronary Artery Disease",
+          "severity": "moderate",
+          "treatment_implications": ["Cardiac clearance needed", "Avoid cardiotoxic agents"]
+        }
+      ],
+      "organ_function": [
+        {
+          "organ": "Lung",
+          "status": "moderate_impairment",
+          "key_values": {"fev1": 62, "dlco": 58},
+          "notes": "COPD, moderate obstruction"
+        },
+        {
+          "organ": "Heart",
+          "status": "mild_impairment",
+          "key_values": {"ef": 50, "cad": "2-vessel disease, stented"},
+          "notes": "Prior PCI to LAD and RCA"
+        }
+      ],
+      "ecog_status": 2,
+      "current_medications": ["Aspirin 81mg daily", "Metoprolol 50mg BID", "Tiotropium inhaler", "Albuterol PRN"],
+      "allergies": ["Penicillin"],
+      "smoking_status": "current",
+      "pack_years": 45,
+      "genomic_report_id": "NGS003",
+      "clinical_notes": [
+        "69-year-old male with locally advanced squamous NSCLC. Active smoker, 45 pack-years.",
+        "History of CAD with stents, moderate COPD. Not a surgical candidate due to comorbidities.",
+        "Will need chemoradiation. PD-L1 testing pending."
+      ]
+    }
+  ]
+}

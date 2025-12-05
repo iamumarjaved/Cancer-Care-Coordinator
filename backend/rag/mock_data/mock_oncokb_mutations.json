@@ -1,0 +1,443 @@
+[
+  {
+    "gene": "EGFR",
+    "variant": "Exon 19 deletion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Osimertinib",
+      "Erlotinib",
+      "Gefitinib",
+      "Afatinib",
+      "Dacomitinib"
+    ],
+    "clinical_significance": "Level 1 evidence for EGFR TKI sensitivity. Osimertinib preferred first-line therapy based on FLAURA trial demonstrating superior PFS and OS.",
+    "notes": "Most common EGFR mutation in NSCLC (~45% of EGFR mutations). Associated with favorable prognosis with targeted therapy."
+  },
+  {
+    "gene": "EGFR",
+    "variant": "L858R",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Osimertinib",
+      "Erlotinib",
+      "Gefitinib",
+      "Afatinib",
+      "Dacomitinib"
+    ],
+    "clinical_significance": "Level 1 evidence for EGFR TKI sensitivity. Second most common sensitizing EGFR mutation.",
+    "notes": "Point mutation in exon 21. Similar response rates to exon 19 deletion with EGFR TKIs."
+  },
+  {
+    "gene": "EGFR",
+    "variant": "T790M",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Osimertinib"
+    ],
+    "clinical_significance": "Level 1 evidence for osimertinib sensitivity. Most common resistance mutation to first/second-generation EGFR TKIs (~50-60%).",
+    "notes": "Gatekeeper mutation conferring resistance. Osimertinib specifically designed to overcome T790M resistance."
+  },
+  {
+    "gene": "EGFR",
+    "variant": "Exon 20 insertion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Amivantamab",
+      "Mobocertinib"
+    ],
+    "clinical_significance": "Level 1 evidence for amivantamab. Generally resistant to first/second/third-generation EGFR TKIs.",
+    "notes": "Comprises ~10% of EGFR mutations. Historically difficult to treat until recent drug approvals."
+  },
+  {
+    "gene": "EGFR",
+    "variant": "C797S",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Amivantamab + Lazertinib"
+    ],
+    "clinical_significance": "Level 2 evidence. Resistance mutation to osimertinib. Limited approved options.",
+    "notes": "Emerging osimertinib resistance mechanism. Combinations under investigation."
+  },
+  {
+    "gene": "ALK",
+    "variant": "Fusion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Alectinib",
+      "Brigatinib",
+      "Lorlatinib",
+      "Ceritinib",
+      "Crizotinib"
+    ],
+    "clinical_significance": "Level 1 evidence for ALK TKI sensitivity. Second-generation inhibitors (alectinib, brigatinib, lorlatinib) preferred over crizotinib.",
+    "notes": "Present in ~5% of NSCLC. EML4-ALK most common fusion partner. Excellent CNS penetration with newer agents."
+  },
+  {
+    "gene": "ALK",
+    "variant": "G1202R",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Lorlatinib"
+    ],
+    "clinical_significance": "Level 1 evidence for lorlatinib. Confers resistance to first/second-generation ALK TKIs.",
+    "notes": "Most common resistance mutation. Lorlatinib specifically developed to overcome G1202R."
+  },
+  {
+    "gene": "ROS1",
+    "variant": "Fusion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Crizotinib",
+      "Entrectinib",
+      "Lorlatinib"
+    ],
+    "clinical_significance": "Level 1 evidence for ROS1 inhibitor sensitivity. Entrectinib preferred for patients with CNS disease.",
+    "notes": "Present in ~1-2% of NSCLC. Structurally similar to ALK, allowing cross-inhibition with some agents."
+  },
+  {
+    "gene": "KRAS",
+    "variant": "G12C",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Sotorasib",
+      "Adagrasib"
+    ],
+    "clinical_significance": "Level 1 evidence for KRAS G12C inhibitor sensitivity. Historically undruggable target now with FDA-approved options.",
+    "notes": "Present in ~13% of NSCLC adenocarcinoma. First direct KRAS inhibitors approved in 2021."
+  },
+  {
+    "gene": "KRAS",
+    "variant": "G12D",
+    "classification": "Oncogenic",
+    "cancer_type": "Various",
+    "therapies": [],
+    "clinical_significance": "Level 3 evidence. No approved targeted therapies. Clinical trials investigating G12D-specific inhibitors.",
+    "notes": "Common KRAS mutation. Several investigational agents in development."
+  },
+  {
+    "gene": "BRAF",
+    "variant": "V600E",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Dabrafenib + Trametinib",
+      "Encorafenib + Binimetinib"
+    ],
+    "clinical_significance": "Level 1 evidence for BRAF+MEK inhibitor combination. Single-agent BRAF inhibitors less effective.",
+    "notes": "Present in ~2% of NSCLC. Combination therapy required for optimal response."
+  },
+  {
+    "gene": "MET",
+    "variant": "Exon 14 skipping",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Capmatinib",
+      "Tepotinib"
+    ],
+    "clinical_significance": "Level 1 evidence for MET inhibitor sensitivity. Typically mutually exclusive with other drivers.",
+    "notes": "Present in ~3% of NSCLC. Associated with older age and sarcomatoid histology."
+  },
+  {
+    "gene": "MET",
+    "variant": "Amplification",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Capmatinib",
+      "Crizotinib"
+    ],
+    "clinical_significance": "Level 2 evidence for MET inhibitor sensitivity. High-level amplification more predictive of response.",
+    "notes": "Can be primary driver or acquired resistance mechanism to EGFR TKIs."
+  },
+  {
+    "gene": "RET",
+    "variant": "Fusion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Selpercatinib",
+      "Pralsetinib"
+    ],
+    "clinical_significance": "Level 1 evidence for RET inhibitor sensitivity. Highly selective RET inhibitors preferred over multi-kinase inhibitors.",
+    "notes": "Present in ~1-2% of NSCLC. KIF5B-RET most common fusion partner."
+  },
+  {
+    "gene": "NTRK1/2/3",
+    "variant": "Fusion",
+    "classification": "Oncogenic",
+    "cancer_type": "Various",
+    "therapies": [
+      "Larotrectinib",
+      "Entrectinib"
+    ],
+    "clinical_significance": "Level 1 evidence for TRK inhibitor sensitivity. Tumor-agnostic indication.",
+    "notes": "Rare in NSCLC (<1%). Pan-cancer biomarker approach."
+  },
+  {
+    "gene": "HER2",
+    "variant": "Mutation",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Trastuzumab deruxtecan"
+    ],
+    "clinical_significance": "Level 1 evidence for T-DXd. Exon 20 insertions most common HER2 mutation in lung cancer.",
+    "notes": "Present in ~2-4% of NSCLC. Distinct from HER2 amplification in breast cancer."
+  },
+  {
+    "gene": "HER2",
+    "variant": "Amplification",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Trastuzumab deruxtecan"
+    ],
+    "clinical_significance": "Level 2 evidence for T-DXd. Less common driver in NSCLC.",
+    "notes": "Define by IHC 3+ or FISH ratio. Response rates lower than HER2 mutations."
+  },
+  {
+    "gene": "TP53",
+    "variant": "Various",
+    "classification": "Likely Oncogenic",
+    "cancer_type": "Various",
+    "therapies": [],
+    "clinical_significance": "Prognostic marker. Co-occurring TP53 mutations may affect response to targeted therapies.",
+    "notes": "Most frequently mutated gene in cancer. No direct therapeutic targeting available."
+  },
+  {
+    "gene": "STK11",
+    "variant": "Loss of function",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [],
+    "clinical_significance": "Predictive of reduced immunotherapy response. Associated with KRAS co-mutation.",
+    "notes": "Important biomarker for treatment selection. May predict inferior outcomes with PD-1 inhibitors."
+  },
+  {
+    "gene": "KEAP1",
+    "variant": "Loss of function",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [],
+    "clinical_significance": "Associated with poor prognosis and reduced chemotherapy/immunotherapy response.",
+    "notes": "Often co-mutated with STK11. May activate NRF2 pathway as therapeutic vulnerability."
+  },
+  {
+    "gene": "NRG1",
+    "variant": "Fusion",
+    "classification": "Oncogenic",
+    "cancer_type": "Various",
+    "therapies": [
+      "Zenocutuzumab"
+    ],
+    "clinical_significance": "Level 2 evidence for HER3-targeted therapy. Rare driver mutation.",
+    "notes": "Present in <1% of NSCLC. CD74-NRG1 most common fusion partner."
+  },
+  {
+    "gene": "FGFR1",
+    "variant": "Amplification",
+    "classification": "Likely Oncogenic",
+    "cancer_type": "NSCLC (Squamous)",
+    "therapies": [
+      "Erdafitinib"
+    ],
+    "clinical_significance": "Level 3 evidence. More common in squamous cell carcinoma.",
+    "notes": "FGFR inhibitors being investigated in squamous NSCLC."
+  },
+  {
+    "gene": "PIK3CA",
+    "variant": "E545K",
+    "classification": "Oncogenic",
+    "cancer_type": "Various",
+    "therapies": [
+      "Alpelisib"
+    ],
+    "clinical_significance": "Level 1 evidence in breast cancer. Limited data in lung cancer.",
+    "notes": "PI3K pathway activation. May occur as resistance mechanism."
+  },
+  {
+    "gene": "ERBB2",
+    "variant": "Exon 20 insertion",
+    "classification": "Oncogenic",
+    "cancer_type": "NSCLC",
+    "therapies": [
+      "Trastuzumab deruxtecan"
+    ],
+    "clinical_significance": "Level 1 evidence for T-DXd. Most common HER2/ERBB2 alteration in lung cancer.",
+    "notes": "YVMA insertion most common. Analogous to EGFR exon 20 insertions."
+  },
+  {
+    "gene": "PIK3CA",
+    "variant": "H1047R",
+    "classification": "Oncogenic",
+    "cancer_type": "Breast",
+    "therapies": [
+      "Alpelisib + Fulvestrant"
+    ],
+    "clinical_significance": "Level 1 evidence for alpelisib in HR+/HER2- metastatic breast cancer (SOLAR-1). Most common PIK3CA hotspot mutation.",
+    "notes": "Present in ~40% of HR+ breast cancers. Alpelisib requires glucose monitoring."
+  },
+  {
+    "gene": "PIK3CA",
+    "variant": "E545K",
+    "classification": "Oncogenic",
+    "cancer_type": "Breast",
+    "therapies": [
+      "Alpelisib + Fulvestrant"
+    ],
+    "clinical_significance": "Level 1 evidence for alpelisib. Second most common PIK3CA hotspot.",
+    "notes": "PI3K inhibitor sensitivity confirmed in clinical trials."
+  },
+  {
+    "gene": "ESR1",
+    "variant": "Y537S",
+    "classification": "Oncogenic",
+    "cancer_type": "Breast",
+    "therapies": [
+      "Elacestrant",
+      "Fulvestrant"
+    ],
+    "clinical_significance": "Level 1 evidence for elacestrant (EMERALD). Confers resistance to aromatase inhibitors.",
+    "notes": "Acquired resistance mutation. Oral SERD elacestrant has improved efficacy."
+  },
+  {
+    "gene": "ESR1",
+    "variant": "D538G",
+    "classification": "Oncogenic",
+    "cancer_type": "Breast",
+    "therapies": [
+      "Elacestrant",
+      "Fulvestrant"
+    ],
+    "clinical_significance": "Level 1 evidence for elacestrant. Common ESR1 resistance mutation.",
+    "notes": "Detected by ctDNA in ~30% of patients after AI therapy."
+  },
+  {
+    "gene": "ERBB2",
+    "variant": "Amplification",
+    "classification": "Oncogenic",
+    "cancer_type": "Breast",
+    "therapies": [
+      "Trastuzumab",
+      "Pertuzumab",
+      "T-DM1",
+      "Trastuzumab deruxtecan"
+    ],
+    "clinical_significance": "Level 1 evidence for HER2-targeted therapy. Defines HER2-positive breast cancer.",
+    "notes": "~15-20% of breast cancers. Testing by IHC and FISH required."
+  },
+  {
+    "gene": "KRAS",
+    "variant": "G12D",
+    "classification": "Oncogenic",
+    "cancer_type": "Colorectal",
+    "therapies": [],
+    "clinical_significance": "Predictive of resistance to anti-EGFR therapy. Most common KRAS mutation in CRC (~35%).",
+    "notes": "No approved targeted therapy. Precludes cetuximab/panitumumab."
+  },
+  {
+    "gene": "KRAS",
+    "variant": "G12V",
+    "classification": "Oncogenic",
+    "cancer_type": "Colorectal",
+    "therapies": [],
+    "clinical_significance": "Predictive of resistance to anti-EGFR therapy. Second most common KRAS mutation.",
+    "notes": "Investigational therapies under development."
+  },
+  {
+    "gene": "KRAS",
+    "variant": "G13D",
+    "classification": "Oncogenic",
+    "cancer_type": "Colorectal",
+    "therapies": [],
+    "clinical_significance": "Some data suggest possible partial sensitivity to cetuximab but not recommended.",
+    "notes": "Less common KRAS mutation. Anti-EGFR generally avoided."
+  },
+  {
+    "gene": "NRAS",
+    "variant": "Q61K",
+    "classification": "Oncogenic",
+    "cancer_type": "Colorectal",
+    "therapies": [],
+    "clinical_significance": "Predictive of resistance to anti-EGFR therapy. Must test before cetuximab/panitumumab.",
+    "notes": "NRAS mutations present in ~5% of CRC."
+  },
+  {
+    "gene": "BRAF",
+    "variant": "V600E",
+    "classification": "Oncogenic",
+    "cancer_type": "Colorectal",
+    "therapies": [
+      "Encorafenib + Cetuximab"
+    ],
+    "clinical_significance": "Level 1 evidence for BRAF+EGFR inhibition (BEACON). Poor prognosis marker.",
+    "notes": "Present in ~10% of mCRC. Often right-sided. ~20% are MSI-H."
+  },
+  {
+    "gene": "BRAF",
+    "variant": "V600E",
+    "classification": "Oncogenic",
+    "cancer_type": "Melanoma",
+    "therapies": [
+      "Dabrafenib + Trametinib",
+      "Vemurafenib + Cobimetinib",
+      "Encorafenib + Binimetinib"
+    ],
+    "clinical_significance": "Level 1 evidence for BRAF+MEK inhibition. ~50% of melanomas harbor BRAF V600 mutations.",
+    "notes": "Most common BRAF mutation in melanoma. Combination therapy required."
+  },
+  {
+    "gene": "BRAF",
+    "variant": "V600K",
+    "classification": "Oncogenic",
+    "cancer_type": "Melanoma",
+    "therapies": [
+      "Dabrafenib + Trametinib",
+      "Vemurafenib + Cobimetinib",
+      "Encorafenib + Binimetinib"
+    ],
+    "clinical_significance": "Level 1 evidence for BRAF+MEK inhibition. Second most common BRAF mutation (~5-10%).",
+    "notes": "Similar response to V600E with BRAF/MEK inhibitors."
+  },
+  {
+    "gene": "NRAS",
+    "variant": "Q61R",
+    "classification": "Oncogenic",
+    "cancer_type": "Melanoma",
+    "therapies": [],
+    "clinical_significance": "Level 3 evidence. No approved targeted therapy. MEK inhibitors being studied.",
+    "notes": "Present in ~20% of melanomas. Mutually exclusive with BRAF."
+  },
+  {
+    "gene": "KIT",
+    "variant": "L576P",
+    "classification": "Oncogenic",
+    "cancer_type": "Melanoma",
+    "therapies": [
+      "Imatinib"
+    ],
+    "clinical_significance": "Level 2 evidence for KIT inhibitors in acral/mucosal melanoma.",
+    "notes": "Most common KIT mutation. ~15% of acral/mucosal melanomas."
+  },
+  {
+    "gene": "KIT",
+    "variant": "Amplification",
+    "classification": "Oncogenic",
+    "cancer_type": "Melanoma",
+    "therapies": [
+      "Imatinib"
+    ],
+    "clinical_significance": "Level 3 evidence. Less responsive than KIT mutations.",
+    "notes": "May occur with or without KIT mutation."
+  }
+]

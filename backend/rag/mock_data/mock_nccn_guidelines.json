@@ -1,0 +1,380 @@
+[
+  {
+    "id": "nccn_nsclc_egfr_1",
+    "title": "EGFR Mutation-Positive NSCLC First-Line Therapy",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with sensitizing EGFR mutations (exon 19 deletion or L858R), osimertinib is the preferred first-line therapy (Category 1). Alternative options include erlotinib, gefitinib, afatinib, or dacomitinib. Osimertinib is preferred based on superior progression-free survival (18.9 vs 10.2 months) and overall survival (38.6 vs 31.8 months) demonstrated in the FLAURA trial. Osimertinib also has superior CNS penetration.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_egfr_2",
+    "title": "EGFR T790M-Positive NSCLC After Progression",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with EGFR T790M mutation detected after progression on first-line erlotinib, gefitinib, or afatinib, osimertinib is the preferred therapy (Category 1). T790M testing should be performed on tissue or plasma (liquid biopsy). If T790M is negative, platinum-based chemotherapy with or without pembrolizumab is recommended.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_egfr_3",
+    "title": "EGFR Exon 20 Insertion NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with EGFR exon 20 insertion mutations, first-line platinum-based chemotherapy is recommended. After progression on chemotherapy, amivantamab or mobocertinib are recommended options (Category 2A). These mutations are generally resistant to standard EGFR TKIs (erlotinib, gefitinib, afatinib, osimertinib).",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_alk_1",
+    "title": "ALK-Positive NSCLC First-Line Therapy",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with ALK rearrangement, alectinib, brigatinib, or lorlatinib are preferred first-line options (Category 1). Alectinib and lorlatinib have demonstrated superior CNS activity compared to crizotinib. The choice between these agents depends on individual patient factors. Crizotinib and ceritinib are other recommended options but less preferred due to inferior efficacy.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_ros1_1",
+    "title": "ROS1-Positive NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with ROS1 rearrangement, crizotinib and entrectinib are recommended first-line options (Category 2A). Entrectinib is preferred for patients with CNS metastases given its demonstrated intracranial activity. Lorlatinib is an option for patients who have progressed on crizotinib or entrectinib.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_kras_1",
+    "title": "KRAS G12C-Mutated NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with KRAS G12C mutation who have received prior platinum-based chemotherapy and PD-1/PD-L1 inhibitor, sotorasib or adagrasib are recommended options (Category 2A). First-line therapy should follow standard NSCLC algorithms (chemotherapy with or without immunotherapy based on PD-L1 status). KRAS G12C-specific inhibitors are currently recommended in the second-line or later setting.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_braf_1",
+    "title": "BRAF V600E-Mutated NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with BRAF V600E mutation, dabrafenib plus trametinib combination is the preferred therapy (Category 2A). Single-agent BRAF inhibitors are less effective than combination therapy. This can be used as first-line therapy or after progression on prior systemic therapy.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_met_1",
+    "title": "MET Exon 14 Skipping NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with MET exon 14 skipping mutation, capmatinib or tepotinib are recommended options (Category 2A). These can be used as first-line therapy or after progression on prior treatment. High response rates have been observed, particularly in treatment-naive patients.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_ret_1",
+    "title": "RET Fusion-Positive NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with RET rearrangement, selpercatinib or pralsetinib are recommended options (Category 2A). These highly selective RET inhibitors are preferred over multi-kinase inhibitors. Can be used as first-line or subsequent-line therapy.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_ntrk_1",
+    "title": "NTRK Fusion-Positive NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with NTRK1/2/3 gene fusions, larotrectinib or entrectinib are recommended options (Category 2A). These have tissue-agnostic FDA approval. Response rates are high with durable responses observed across tumor types.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_her2_1",
+    "title": "HER2 (ERBB2) Mutation-Positive NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 2A",
+    "content": "For patients with HER2 mutations (most commonly exon 20 insertions), trastuzumab deruxtecan (T-DXd) is the recommended option after progression on prior systemic therapy (Category 2A). Traditional HER2-targeted agents (trastuzumab, pertuzumab) are less effective. First-line treatment should follow standard NSCLC guidelines.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_pdl1_1",
+    "title": "PD-L1 High (\u226550%) NSCLC Without Targetable Mutations",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with PD-L1 TPS \u226550% and no EGFR, ALK, or other targetable mutations, pembrolizumab monotherapy is a preferred first-line option (Category 1). Alternative options include pembrolizumab with chemotherapy, or atezolizumab with bevacizumab and chemotherapy. Selection depends on patient preferences, toxicity considerations, and clinical factors.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_pdl1_2",
+    "title": "PD-L1 Low (1-49%) NSCLC Without Targetable Mutations",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with PD-L1 TPS 1-49% and no targetable mutations, pembrolizumab plus platinum-based chemotherapy is a preferred first-line option (Category 1). Other combination immunotherapy-chemotherapy regimens are also recommended. Single-agent pembrolizumab may be considered but response rates are lower than in PD-L1 high patients.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_stage3_1",
+    "title": "Unresectable Stage III NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "For patients with unresectable stage III NSCLC, definitive concurrent chemoradiation followed by durvalumab consolidation is the standard of care (Category 1), based on the PACIFIC trial. Durvalumab should be started within 1-42 days after completion of chemoradiation in patients without disease progression. Duration is up to 12 months.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_nsclc_biomarker_1",
+    "title": "Biomarker Testing in Advanced NSCLC",
+    "cancer_type": "NSCLC",
+    "evidence_level": "Category 1",
+    "content": "All patients with advanced NSCLC (adenocarcinoma, large cell, NSCLC NOS, or squamous cell in non-smokers) should undergo broad molecular profiling. Minimum testing should include EGFR, ALK, ROS1, BRAF V600E, NTRK1/2/3, MET exon 14, RET, KRAS G12C, and HER2 mutations. PD-L1 testing by IHC should also be performed. Next-generation sequencing is preferred over sequential single-gene testing.",
+    "source": "NCCN Guidelines NSCLC v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_her2pos_1",
+    "title": "HER2-Positive Metastatic Breast Cancer First-Line",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For HER2-positive metastatic breast cancer, the preferred first-line regimen is pertuzumab + trastuzumab + taxane (docetaxel or paclitaxel) based on CLEOPATRA trial showing improved OS. After progression, T-DM1 (ado-trastuzumab emtansine) is preferred (EMILIA trial). Third-line options include trastuzumab deruxtecan (T-DXd) or tucatinib + trastuzumab + capecitabine.",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_her2pos_2",
+    "title": "HER2-Positive Early Breast Cancer Adjuvant Therapy",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For HER2-positive early breast cancer, adjuvant therapy with trastuzumab-based regimens is standard of care. For node-positive or high-risk disease, AC-THP (anthracycline-based with pertuzumab) or TCHP (non-anthracycline) are preferred. Duration is 1 year of HER2-targeted therapy. For residual disease after neoadjuvant therapy, T-DM1 for 14 cycles is recommended (KATHERINE trial).",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_tnbc_1",
+    "title": "Triple-Negative Breast Cancer Metastatic First-Line",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For metastatic triple-negative breast cancer (TNBC), pembrolizumab + chemotherapy (nab-paclitaxel, paclitaxel, or gem/carbo) is preferred for PD-L1 CPS \u226510 (KEYNOTE-355). For BRCA1/2-mutated TNBC, olaparib or talazoparib are preferred (OlympiAD). Sacituzumab govitecan is recommended after \u22652 prior therapies (ASCENT trial).",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_tnbc_2",
+    "title": "Triple-Negative Breast Cancer Early Stage",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For early-stage TNBC \u22652cm or node-positive, neoadjuvant pembrolizumab + chemotherapy followed by adjuvant pembrolizumab is recommended (KEYNOTE-522). Pathologic complete response (pCR) rates are approximately 65%. For residual disease, capecitabine adjuvant therapy may be considered (CREATE-X trial).",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_hrpos_1",
+    "title": "HR-Positive/HER2-Negative Metastatic Breast Cancer",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For HR-positive/HER2-negative metastatic breast cancer, CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) + aromatase inhibitor or fulvestrant is preferred first-line therapy. For ESR1-mutated disease, elacestrant is an option. For PIK3CA-mutated, alpelisib + fulvestrant is recommended. PARP inhibitors for BRCA-mutated disease.",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_hrpos_2",
+    "title": "HR-Positive Early Breast Cancer Adjuvant Endocrine Therapy",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For HR-positive early breast cancer, adjuvant endocrine therapy is essential. Premenopausal: tamoxifen \u00b1 ovarian suppression (OFS) for 5-10 years. Postmenopausal: aromatase inhibitor (anastrozole, letrozole, exemestane) preferred, or switch strategy. High-risk patients may benefit from extended therapy beyond 5 years. Abemaciclib may be added for high-risk node-positive disease (monarchE).",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_brca_1",
+    "title": "BRCA-Mutated Breast Cancer Treatment",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "For BRCA1/2-mutated breast cancer, PARP inhibitors are key targeted therapies. Olaparib or talazoparib for HER2-negative metastatic breast cancer with germline BRCA mutation (OlympiAD, EMBRACA). Adjuvant olaparib for 1 year in high-risk HER2-negative early breast cancer (OlympiA). Consider platinum-based chemotherapy for TNBC.",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_breast_biomarker_1",
+    "title": "Biomarker Testing in Breast Cancer",
+    "cancer_type": "Breast",
+    "evidence_level": "Category 1",
+    "content": "Essential biomarker testing: ER, PR, HER2 (IHC and FISH if equivocal). For metastatic disease, additional testing includes: germline BRCA1/2, PIK3CA mutation (HR+/HER2-), PD-L1 (TNBC), ESR1 mutation (after prior endocrine therapy), and NTRK fusion. Gene expression assays (Oncotype DX, MammaPrint) help guide adjuvant chemotherapy decisions in early-stage HR+/HER2- disease.",
+    "source": "NCCN Guidelines Breast Cancer v4.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_kras_1",
+    "title": "KRAS/NRAS Wild-Type Metastatic Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 1",
+    "content": "For RAS wild-type (KRAS/NRAS exons 2-4) metastatic colorectal cancer, anti-EGFR therapy (cetuximab or panitumumab) + chemotherapy (FOLFOX or FOLFIRI) is recommended for left-sided tumors. For right-sided tumors, bevacizumab + chemotherapy is preferred due to reduced efficacy of anti-EGFR agents. Extended RAS testing is mandatory before anti-EGFR therapy.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_kras_2",
+    "title": "KRAS G12C-Mutated Metastatic Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 2A",
+    "content": "For KRAS G12C-mutated metastatic colorectal cancer after prior therapy, sotorasib + panitumumab is a recommended option (CodeBreaK 300 trial). This represents the first targeted therapy for KRAS-mutated CRC. Adagrasib combinations are also under investigation. Single-agent KRAS G12C inhibitors have limited efficacy in CRC.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_msi_1",
+    "title": "MSI-High/dMMR Metastatic Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 1",
+    "content": "For MSI-high or mismatch repair deficient (dMMR) metastatic colorectal cancer, first-line pembrolizumab or nivolumab \u00b1 ipilimumab is preferred over chemotherapy (KEYNOTE-177). Response rates are ~45% with durable responses. MSI/MMR testing is recommended for all CRC patients at diagnosis. Lynch syndrome screening should be considered.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_braf_1",
+    "title": "BRAF V600E-Mutated Metastatic Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 2A",
+    "content": "For BRAF V600E-mutated metastatic CRC, encorafenib + cetuximab \u00b1 binimetinib is recommended after prior therapy (BEACON trial). First-line intensive chemotherapy (FOLFOXIRI + bevacizumab) may be considered. BRAF V600E mutation is associated with poor prognosis. MSI status should be assessed as ~20% are MSI-H.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_her2_1",
+    "title": "HER2-Amplified Metastatic Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 2A",
+    "content": "For HER2-amplified (3+ by IHC or FISH+) metastatic CRC that is RAS/BRAF wild-type, trastuzumab + pertuzumab or trastuzumab deruxtecan are options after progression on standard therapies (HERACLES, MyPathway, DESTINY-CRC01). HER2 amplification occurs in ~3% of CRC, more common in RAS wild-type.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_adjuvant_1",
+    "title": "Stage III Colon Cancer Adjuvant Chemotherapy",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 1",
+    "content": "For stage III colon cancer, adjuvant oxaliplatin-based chemotherapy (FOLFOX or CAPEOX) is standard of care. Duration: 6 months for high-risk, 3 months acceptable for low-risk T1-3N1 (IDEA collaboration). Consider 3-month CAPEOX to reduce neuropathy. 5-FU/LV alone for patients unable to tolerate oxaliplatin. ctDNA testing may help guide decisions.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_crc_biomarker_1",
+    "title": "Biomarker Testing in Colorectal Cancer",
+    "cancer_type": "Colorectal",
+    "evidence_level": "Category 1",
+    "content": "Essential biomarker testing for metastatic CRC: Extended RAS (KRAS/NRAS exons 2-4), BRAF V600E, MSI/MMR status, HER2 amplification. Consider NTRK fusion testing. UGT1A1 genotyping before irinotecan. NGS panel preferred for comprehensive testing. All patients should be screened for Lynch syndrome. Sidedness matters for treatment selection.",
+    "source": "NCCN Guidelines Colon Cancer v3.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_braf_1",
+    "title": "BRAF V600-Mutated Unresectable/Metastatic Melanoma",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 1",
+    "content": "For BRAF V600-mutated unresectable or metastatic melanoma, options include: (1) Anti-PD-1 \u00b1 anti-CTLA-4 (preferred for most patients), or (2) BRAF + MEK inhibitor combination (dabrafenib/trametinib, vemurafenib/cobimetinib, or encorafenib/binimetinib). Immunotherapy is often preferred first-line given potential for durable responses. BRAF/MEK may be preferred for rapidly progressive disease.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_braf_2",
+    "title": "BRAF Wild-Type Unresectable/Metastatic Melanoma",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 1",
+    "content": "For BRAF wild-type unresectable or metastatic melanoma, checkpoint inhibitor immunotherapy is standard of care: nivolumab + ipilimumab (CheckMate 067), pembrolizumab, or nivolumab monotherapy. Relatlimab + nivolumab is another option (RELATIVITY-047). Choice depends on patient factors and tolerability. Intratumoral therapy (T-VEC) for accessible lesions.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_adjuvant_1",
+    "title": "Stage III Melanoma Adjuvant Therapy",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 1",
+    "content": "For resected stage III melanoma, adjuvant therapy options include: pembrolizumab (KEYNOTE-054) or nivolumab (CheckMate 238) for all patients; dabrafenib/trametinib for BRAF V600-mutated disease (COMBI-AD). Duration is typically 1 year. Consider observation for low-risk stage IIIA. Active surveillance with imaging per NCCN guidelines.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_neoadjuvant_1",
+    "title": "Stage III Melanoma Neoadjuvant Therapy",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 2A",
+    "content": "Neoadjuvant immunotherapy is emerging as a preferred approach for resectable stage III melanoma. Pembrolizumab neoadjuvant followed by adjuvant (SWOG S1801) showed improved EFS vs adjuvant alone. Neoadjuvant nivolumab + ipilimumab also shows high pCR rates. Consider neoadjuvant therapy for clinically bulky nodal disease.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_ckit_1",
+    "title": "KIT-Mutated Melanoma",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 2A",
+    "content": "For KIT-mutated melanoma (acral, mucosal, or chronic sun-damaged skin), imatinib is an option if anti-PD-1 therapy is not appropriate or after progression. KIT mutations occur in ~15-20% of acral/mucosal melanomas. Response rates are ~20-25% with KIT inhibitors. Immunotherapy remains preferred first-line approach.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_brain_1",
+    "title": "Melanoma Brain Metastases",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 2A",
+    "content": "For melanoma brain metastases, systemic therapy with intracranial activity is preferred: nivolumab + ipilimumab has ~50% intracranial response rate (CheckMate 204). BRAF/MEK inhibitors also have CNS activity for BRAF-mutated. Local therapy (SRS, surgery) for limited metastases. Avoid whole brain radiation if possible given neurocognitive effects.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_melanoma_biomarker_1",
+    "title": "Biomarker Testing in Melanoma",
+    "cancer_type": "Melanoma",
+    "evidence_level": "Category 1",
+    "content": "BRAF V600 mutation testing is required for all patients with unresectable or metastatic melanoma before treatment. Consider KIT mutation testing for acral, mucosal, or chronic sun-damaged skin melanomas. NTRK fusion testing may be considered. PD-L1 is not required for treatment decisions. Tumor mutational burden and ctDNA under investigation.",
+    "source": "NCCN Guidelines Melanoma v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_pancreas_adjuvant_1",
+    "title": "Resected Pancreatic Cancer Adjuvant Therapy",
+    "cancer_type": "Pancreatic",
+    "evidence_level": "Category 1",
+    "content": "For resected pancreatic adenocarcinoma, adjuvant chemotherapy is standard of care. Preferred regimens: modified FOLFIRINOX for ECOG 0-1 patients (PRODIGE 24), or gemcitabine/capecitabine (ESPAC-4). Single-agent gemcitabine for patients unable to tolerate combination therapy. Consider adjuvant chemoradiation for R1 resections.",
+    "source": "NCCN Guidelines Pancreatic Cancer v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_pancreas_metastatic_1",
+    "title": "Metastatic Pancreatic Cancer First-Line Therapy",
+    "cancer_type": "Pancreatic",
+    "evidence_level": "Category 1",
+    "content": "For metastatic pancreatic adenocarcinoma with good PS (ECOG 0-1), FOLFIRINOX or gemcitabine/nab-paclitaxel are preferred first-line options. FOLFIRINOX shows higher response rates but more toxicity. Gemcitabine alone for poor PS. NALIRIFOX is a new option (NAPOLI-3). MSI-high tumors may benefit from pembrolizumab.",
+    "source": "NCCN Guidelines Pancreatic Cancer v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_pancreas_brca_1",
+    "title": "BRCA-Mutated Pancreatic Cancer",
+    "cancer_type": "Pancreatic",
+    "evidence_level": "Category 1",
+    "content": "For germline BRCA1/2-mutated metastatic pancreatic cancer without progression on platinum-based chemotherapy, olaparib maintenance is recommended (POLO trial). Platinum-based chemotherapy (FOLFIRINOX) is preferred first-line for BRCA-mutated disease. All patients should be offered germline testing. Consider family genetic counseling.",
+    "source": "NCCN Guidelines Pancreatic Cancer v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_pancreas_borderline_1",
+    "title": "Borderline Resectable Pancreatic Cancer",
+    "cancer_type": "Pancreatic",
+    "evidence_level": "Category 2A",
+    "content": "For borderline resectable pancreatic cancer, neoadjuvant therapy is preferred before surgical exploration. Options include FOLFIRINOX, gemcitabine/nab-paclitaxel, or chemoradiation. Goal is to achieve vascular margin clearance and select patients who will benefit from surgery. Restaging imaging after neoadjuvant therapy to assess resectability.",
+    "source": "NCCN Guidelines Pancreatic Cancer v2.2024",
+    "year": 2024
+  },
+  {
+    "id": "nccn_pancreas_biomarker_1",
+    "title": "Biomarker Testing in Pancreatic Cancer",
+    "cancer_type": "Pancreatic",
+    "evidence_level": "Category 1",
+    "content": "Recommended testing: germline BRCA1/2, PALB2 (all patients); somatic testing for MSI-high/dMMR, KRAS, NTRK fusion. Consider HRD testing. ~5-10% have germline BRCA1/2 mutations. Approximately 1% are MSI-high. KRAS mutations present in ~90% but not directly targetable (except G12C which is rare in pancreatic cancer).",
+    "source": "NCCN Guidelines Pancreatic Cancer v2.2024",
+    "year": 2024
+  }
+]

@@ -1,0 +1,19 @@
+# Example Terraform variables file
+# Copy to terraform.tfvars and fill in values
+
+aws_region      = "us-east-1"
+project_name    = "cancer-care"
+environment     = "prod"
+domain_name     = "healthcare.umarjaved.me"
+route53_zone_id = "YOUR_ROUTE53_ZONE_ID"
+
+# Database
+db_username = "cancercare_admin"
+db_password = "YOUR_SECURE_PASSWORD"
+
+# Application Secrets
+openai_api_key        = "sk-..."
+clerk_secret_key      = "sk_live_..."
+clerk_publishable_key = "pk_live_..."
+langsmith_api_key     = "ls__..."
+sendgrid_api_key      = "SG...."

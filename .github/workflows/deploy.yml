@@ -1,0 +1,63 @@
+name: Deploy to ECS
+
+on:
+  workflow_run:
+    workflows: ["CI - Build and Push"]
+    types:
+      - completed
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  AWS_REGION: us-east-1
+  ECS_CLUSTER: cancer-care-prod-cluster
+  ECS_BACKEND_SERVICE: cancer-care-prod-backend
+  ECS_FRONTEND_SERVICE: cancer-care-prod-frontend
+
+jobs:
+  deploy:
+    name: Deploy to ECS
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Force new deployment - Backend
+        run: |
+          aws ecs update-service \
+            --cluster $ECS_CLUSTER \
+            --service $ECS_BACKEND_SERVICE \
+            --force-new-deployment
+
+      - name: Force new deployment - Frontend
+        run: |
+          aws ecs update-service \
+            --cluster $ECS_CLUSTER \
+            --service $ECS_FRONTEND_SERVICE \
+            --force-new-deployment
+
+      - name: Wait for backend service stability
+        run: |
+          aws ecs wait services-stable \
+            --cluster $ECS_CLUSTER \
+            --services $ECS_BACKEND_SERVICE
+
+      - name: Wait for frontend service stability
+        run: |
+          aws ecs wait services-stable \
+            --cluster $ECS_CLUSTER \
+            --services $ECS_FRONTEND_SERVICE
+
+      - name: Deployment complete
+        run: |
+          echo "Deployment completed successfully!"
+          echo "Application URL: https://healthcare.umarjaved.me"
