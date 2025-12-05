@@ -30,9 +30,22 @@ variable "domain_name" {
   default     = "healthcare.umarjaved.me"
 }
 
+variable "enable_https" {
+  description = "Enable HTTPS with custom domain (requires Route 53)"
+  type        = bool
+  default     = false
+}
+
+variable "create_route53_zone" {
+  description = "Create a new Route 53 hosted zone"
+  type        = bool
+  default     = false
+}
+
 variable "route53_zone_id" {
-  description = "Route 53 hosted zone ID for umarjaved.me"
+  description = "Existing Route 53 hosted zone ID (if not creating new)"
   type        = string
+  default     = ""
 }
 
 # Database credentials

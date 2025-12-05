@@ -55,14 +55,6 @@ module "ecr" {
   environment  = var.environment
 }
 
-# SSL Certificate Module
-module "ssl" {
-  source = "./modules/ssl"
-
-  domain_name = var.domain_name
-  zone_id     = var.route53_zone_id
-}
-
 # Database Module
 module "database" {
   source = "./modules/database"
@@ -101,7 +93,7 @@ module "secrets" {
   sendgrid_api_key                   = var.sendgrid_api_key
 }
 
-# Load Balancer Module
+# Load Balancer Module (HTTP only initially, no SSL)
 module "loadbalancer" {
   source = "./modules/loadbalancer"
 
@@ -110,7 +102,29 @@ module "loadbalancer" {
   vpc_id              = module.networking.vpc_id
   public_subnet_ids   = module.networking.public_subnet_ids
   security_group_id   = module.security.alb_security_group_id
-  certificate_arn     = module.ssl.certificate_arn
+  enable_https        = var.enable_https
+  certificate_arn     = var.enable_https ? module.ssl[0].certificate_arn : ""
+}
+
+# SSL Certificate Module (only if custom domain is configured)
+module "ssl" {
+  count  = var.enable_https ? 1 : 0
+  source = "./modules/ssl"
+
+  domain_name = var.domain_name
+  zone_id     = module.dns[0].zone_id
+}
+
+# DNS Module (only if custom domain is configured)
+module "dns" {
+  count  = var.enable_https ? 1 : 0
+  source = "./modules/dns"
+
+  domain_name  = var.domain_name
+  create_zone  = var.create_route53_zone
+  zone_id      = var.route53_zone_id
+  alb_dns_name = module.loadbalancer.alb_dns_name
+  alb_zone_id  = module.loadbalancer.alb_zone_id
 }
 
 # ECS Module
@@ -131,15 +145,5 @@ module "ecs" {
   efs_file_system_id   = module.storage.efs_file_system_id
   efs_access_point_id  = module.storage.efs_access_point_id
   secrets_arn          = module.secrets.secrets_arn
-  domain_name          = var.domain_name
-}
-
-# DNS Module
-module "dns" {
-  source = "./modules/dns"
-
-  domain_name = var.domain_name
-  zone_id     = var.route53_zone_id
-  alb_dns_name = module.loadbalancer.alb_dns_name
-  alb_zone_id  = module.loadbalancer.alb_zone_id
+  domain_name          = var.enable_https ? var.domain_name : module.loadbalancer.alb_dns_name
 }

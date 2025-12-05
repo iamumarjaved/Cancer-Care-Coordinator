@@ -18,6 +18,12 @@ variable "security_group_id" {
   type = string
 }
 
+variable "enable_https" {
+  type    = bool
+  default = false
+}
+
 variable "certificate_arn" {
-  type = string
+  type    = string
+  default = ""
 }

@@ -64,25 +64,51 @@ resource "aws_lb_target_group" "frontend" {
   }
 }
 
-# HTTP Listener (redirect to HTTPS)
+# HTTP Listener
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.main.arn
   port              = "80"
   protocol          = "HTTP"
 
   default_action {
-    type = "redirect"
+    type = var.enable_https ? "redirect" : "forward"
 
-    redirect {
-      port        = "443"
-      protocol    = "HTTPS"
-      status_code = "HTTP_301"
+    # Redirect to HTTPS if enabled
+    dynamic "redirect" {
+      for_each = var.enable_https ? [1] : []
+      content {
+        port        = "443"
+        protocol    = "HTTPS"
+        status_code = "HTTP_301"
+      }
+    }
+
+    # Forward to frontend if HTTPS is disabled
+    target_group_arn = var.enable_https ? null : aws_lb_target_group.frontend.arn
+  }
+}
+
+# HTTP API routing rule (only when HTTPS is disabled)
+resource "aws_lb_listener_rule" "http_api" {
+  count        = var.enable_https ? 0 : 1
+  listener_arn = aws_lb_listener.http.arn
+  priority     = 100
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.backend.arn
+  }
+
+  condition {
+    path_pattern {
+      values = ["/api/*", "/health", "/docs", "/openapi.json"]
     }
   }
 }
 
-# HTTPS Listener
+# HTTPS Listener (only if enabled)
 resource "aws_lb_listener" "https" {
+  count             = var.enable_https ? 1 : 0
   load_balancer_arn = aws_lb.main.arn
   port              = "443"
   protocol          = "HTTPS"
@@ -95,9 +121,10 @@ resource "aws_lb_listener" "https" {
   }
 }
 
-# API routing rule
-resource "aws_lb_listener_rule" "api" {
-  listener_arn = aws_lb_listener.https.arn
+# HTTPS API routing rule (only if enabled)
+resource "aws_lb_listener_rule" "https_api" {
+  count        = var.enable_https ? 1 : 0
+  listener_arn = aws_lb_listener.https[0].arn
   priority     = 100
 
   action {

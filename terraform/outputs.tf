@@ -12,7 +12,7 @@ output "alb_dns_name" {
 
 output "application_url" {
   description = "Application URL"
-  value       = "https://${var.domain_name}"
+  value       = var.enable_https ? "https://${var.domain_name}" : "http://${module.loadbalancer.alb_dns_name}"
 }
 
 output "backend_ecr_repository_url" {
@@ -43,4 +43,9 @@ output "backend_service_name" {
 output "frontend_service_name" {
   description = "Frontend ECS service name"
   value       = module.ecs.frontend_service_name
+}
+
+output "route53_nameservers" {
+  description = "Route 53 nameservers (if zone was created)"
+  value       = var.enable_https && var.create_route53_zone ? module.dns[0].nameservers : []
 }
