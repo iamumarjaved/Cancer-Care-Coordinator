@@ -32,10 +32,10 @@ data "aws_availability_zones" "available" {
 module "networking" {
   source = "./modules/networking"
 
-  project_name        = var.project_name
-  environment         = var.environment
-  vpc_cidr            = var.vpc_cidr
-  availability_zones  = slice(data.aws_availability_zones.available.names, 0, 2)
+  project_name       = var.project_name
+  environment        = var.environment
+  vpc_cidr           = var.vpc_cidr
+  availability_zones = slice(data.aws_availability_zones.available.names, 0, 2)
 }
 
 # Security Module
@@ -83,27 +83,27 @@ module "storage" {
 module "secrets" {
   source = "./modules/secrets"
 
-  project_name                       = var.project_name
-  environment                        = var.environment
-  database_url                       = module.database.connection_string
-  openai_api_key                     = var.openai_api_key
-  clerk_secret_key                   = var.clerk_secret_key
-  clerk_publishable_key              = var.clerk_publishable_key
-  langsmith_api_key                  = var.langsmith_api_key
-  sendgrid_api_key                   = var.sendgrid_api_key
+  project_name          = var.project_name
+  environment           = var.environment
+  database_url          = module.database.connection_string
+  openai_api_key        = var.openai_api_key
+  clerk_secret_key      = var.clerk_secret_key
+  clerk_publishable_key = var.clerk_publishable_key
+  langsmith_api_key     = var.langsmith_api_key
+  sendgrid_api_key      = var.sendgrid_api_key
 }
 
 # Load Balancer Module (HTTP only initially, no SSL)
 module "loadbalancer" {
   source = "./modules/loadbalancer"
 
-  project_name        = var.project_name
-  environment         = var.environment
-  vpc_id              = module.networking.vpc_id
-  public_subnet_ids   = module.networking.public_subnet_ids
-  security_group_id   = module.security.alb_security_group_id
-  enable_https        = var.enable_https
-  certificate_arn     = var.enable_https ? module.ssl[0].certificate_arn : ""
+  project_name      = var.project_name
+  environment       = var.environment
+  vpc_id            = module.networking.vpc_id
+  public_subnet_ids = module.networking.public_subnet_ids
+  security_group_id = module.security.alb_security_group_id
+  enable_https      = var.enable_https
+  certificate_arn   = var.enable_https ? module.ssl[0].certificate_arn : ""
 }
 
 # SSL Certificate Module (only if custom domain is configured)
@@ -131,19 +131,19 @@ module "dns" {
 module "ecs" {
   source = "./modules/ecs"
 
-  project_name         = var.project_name
-  environment          = var.environment
-  aws_region           = var.aws_region
-  vpc_id               = module.networking.vpc_id
-  private_subnet_ids   = module.networking.private_subnet_ids
-  backend_sg_id        = module.security.backend_security_group_id
-  frontend_sg_id       = module.security.frontend_security_group_id
-  backend_ecr_url      = module.ecr.backend_repository_url
-  frontend_ecr_url     = module.ecr.frontend_repository_url
+  project_name                  = var.project_name
+  environment                   = var.environment
+  aws_region                    = var.aws_region
+  vpc_id                        = module.networking.vpc_id
+  private_subnet_ids            = module.networking.private_subnet_ids
+  backend_sg_id                 = module.security.backend_security_group_id
+  frontend_sg_id                = module.security.frontend_security_group_id
+  backend_ecr_url               = module.ecr.backend_repository_url
+  frontend_ecr_url              = module.ecr.frontend_repository_url
   alb_target_group_backend_arn  = module.loadbalancer.backend_target_group_arn
   alb_target_group_frontend_arn = module.loadbalancer.frontend_target_group_arn
-  efs_file_system_id   = module.storage.efs_file_system_id
-  efs_access_point_id  = module.storage.efs_access_point_id
-  secrets_arn          = module.secrets.secrets_arn
-  domain_name          = var.enable_https ? var.domain_name : module.loadbalancer.alb_dns_name
+  efs_file_system_id            = module.storage.efs_file_system_id
+  efs_access_point_id           = module.storage.efs_access_point_id
+  secrets_arn                   = module.secrets.secrets_arn
+  domain_name                   = var.enable_https ? var.domain_name : module.loadbalancer.alb_dns_name
 }

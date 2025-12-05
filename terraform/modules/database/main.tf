@@ -27,10 +27,10 @@ resource "aws_db_instance" "main" {
   vpc_security_group_ids = [var.security_group_id]
   db_subnet_group_name   = aws_db_subnet_group.main.name
 
-  multi_az               = false  # Single AZ for cost savings
-  publicly_accessible    = false
-  skip_final_snapshot    = true
-  deletion_protection    = false
+  multi_az            = false # Single AZ for cost savings
+  publicly_accessible = false
+  skip_final_snapshot = true
+  deletion_protection = false
 
   backup_retention_period = 7
   backup_window           = "03:00-04:00"
