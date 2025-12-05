@@ -193,14 +193,6 @@ resource "aws_ecs_task_definition" "frontend" {
         awslogs-stream-prefix = "ecs"
       }
     }
-
-    healthCheck = {
-      command     = ["CMD-SHELL", "wget -q -O- http://localhost:3000/api/health || exit 1"]
-      interval    = 30
-      timeout     = 10
-      retries     = 3
-      startPeriod = 120
-    }
   }])
 
   tags = {
