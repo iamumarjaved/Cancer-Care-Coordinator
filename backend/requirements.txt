@@ -15,7 +15,7 @@ openai==1.12.0
 langchain==0.1.6
 langchain-openai==0.0.5
 langgraph==0.0.26
-langsmith>=0.1.0
+langsmith>=0.0.83,<0.1
 
 # RAG & Embeddings (ChromaDB for local vector storage)
 chromadb>=0.4.22

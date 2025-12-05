@@ -92,7 +92,10 @@ WORKDIR /app
 # Copy standalone build
 COPY --from=frontend-builder /app/frontend/.next/standalone ./
 COPY --from=frontend-builder /app/frontend/.next/static ./.next/static
-COPY --from=frontend-builder /app/frontend/public ./public
+
+# Copy public folder if it exists (create empty dir as fallback)
+RUN mkdir -p ./public
+COPY --from=frontend-builder /app/frontend/public ./public/
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
