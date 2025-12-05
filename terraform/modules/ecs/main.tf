@@ -227,10 +227,8 @@ resource "aws_ecs_service" "backend" {
     container_port   = 8000
   }
 
-  deployment_configuration {
-    maximum_percent         = 200
-    minimum_healthy_percent = 100
-  }
+  deployment_maximum_percent         = 200
+  deployment_minimum_healthy_percent = 100
 
   tags = {
     Name = "${var.project_name}-${var.environment}-backend"
@@ -257,10 +255,8 @@ resource "aws_ecs_service" "frontend" {
     container_port   = 3000
   }
 
-  deployment_configuration {
-    maximum_percent         = 200
-    minimum_healthy_percent = 100
-  }
+  deployment_maximum_percent         = 200
+  deployment_minimum_healthy_percent = 100
 
   tags = {
     Name = "${var.project_name}-${var.environment}-frontend"
