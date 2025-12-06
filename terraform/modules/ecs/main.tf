@@ -102,7 +102,7 @@ resource "aws_ecs_task_definition" "backend" {
       { name = "USE_MOCK_LLM", value = "false" },
       { name = "USE_MOCK_VECTOR_STORE", value = "false" },
       { name = "AUTH_ENABLED", value = "true" },
-      { name = "CORS_ORIGINS", value = "http://${var.domain_name}" },
+      { name = "CORS_ORIGINS", value = "https://${var.domain_name}" },
       { name = "LANGSMITH_TRACING_ENABLED", value = "true" },
       { name = "EMAIL_ENABLED", value = "true" },
     ]
@@ -177,7 +177,7 @@ resource "aws_ecs_task_definition" "frontend" {
 
     environment = [
       { name = "NODE_ENV", value = "production" },
-      { name = "NEXT_PUBLIC_API_URL", value = "http://${var.domain_name}" },
+      { name = "NEXT_PUBLIC_API_URL", value = "https://${var.domain_name}" },
       { name = "NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL", value = "/" },
       { name = "NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL", value = "/" },
       { name = "NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL", value = "/" },
