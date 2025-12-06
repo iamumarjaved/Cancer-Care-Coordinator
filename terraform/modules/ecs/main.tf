@@ -178,6 +178,10 @@ resource "aws_ecs_task_definition" "frontend" {
     environment = [
       { name = "NODE_ENV", value = "production" },
       { name = "NEXT_PUBLIC_API_URL", value = "http://${var.domain_name}" },
+      { name = "NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL", value = "/" },
+      { name = "NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL", value = "/" },
+      { name = "NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL", value = "/" },
+      { name = "NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL", value = "/" },
     ]
 
     secrets = [

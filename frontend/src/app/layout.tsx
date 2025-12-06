@@ -20,6 +20,7 @@ export default function RootLayout({
     <ClerkProvider
       signInFallbackRedirectUrl="/"
       signUpFallbackRedirectUrl="/"
+      allowedRedirectOrigins={['http://healthcare.umarjaved.me', 'https://healthcare.umarjaved.me']}
     >
       <html lang="en">
         <body className={inter.className}>
