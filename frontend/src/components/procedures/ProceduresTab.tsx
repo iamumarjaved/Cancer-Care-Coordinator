@@ -5,6 +5,7 @@ import { TreatmentProcedure, TreatmentCycle, ProcedureType, TreatmentProcedureCr
 import { Card, CardContent, CardHeader, CardTitle, Badge, Button } from '@/components/ui';
 import { ProcedureCard } from './ProcedureCard';
 import { AddProcedureModal } from './AddProcedureModal';
+import { AddTreatmentCycleModal } from './AddTreatmentCycleModal';
 import {
   usePatientProcedures,
   useUpcomingProcedures,
@@ -14,7 +15,7 @@ import {
   useCreateProcedure,
   useGenerateProcedures,
 } from '@/hooks/useProcedures';
-import { useTreatmentCycles } from '@/hooks/useTreatmentCycles';
+import { useTreatmentCycles, useCreateTreatmentCycle } from '@/hooks/useTreatmentCycles';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, parseISO, addMonths, subMonths } from 'date-fns';
 import {
   Calendar,
@@ -38,6 +39,7 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [showAddProcedureModal, setShowAddProcedureModal] = useState(false);
+  const [showAddCycleModal, setShowAddCycleModal] = useState(false);
   const [selectedCycleId, setSelectedCycleId] = useState<string | null>(null);
 
   // Fetch data
@@ -55,6 +57,7 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
   const cancelProcedure = useCancelProcedure();
   const createProcedure = useCreateProcedure();
   const generateProcedures = useGenerateProcedures();
+  const createTreatmentCycle = useCreateTreatmentCycle();
 
   // Group procedures by status for list view
   const groupedProcedures = useMemo(() => {
@@ -135,6 +138,17 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
     });
   };
 
+  const handleCreateTreatmentCycle = async (cycle: Parameters<typeof createTreatmentCycle.mutateAsync>[0]['cycle']) => {
+    const newCycle = await createTreatmentCycle.mutateAsync({
+      patientId,
+      cycle,
+    });
+    // Auto-select the newly created cycle
+    if (newCycle?.id) {
+      setSelectedCycleId(newCycle.id);
+    }
+  };
+
   // Get the selected cycle details
   const selectedCycle = treatmentCycles?.find((c) => c.id === selectedCycleId);
 
@@ -182,20 +196,40 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
           </Button>
         </div>
 
-        {treatmentCycles && treatmentCycles.length > 0 && (
-          <div className="flex items-center gap-2">
-            <select
-              className="text-sm border rounded-md px-2 py-1"
-              value={selectedCycleId || ''}
-              onChange={(e) => setSelectedCycleId(e.target.value || null)}
+        <div className="flex items-center gap-2">
+          {treatmentCycles && treatmentCycles.length > 0 ? (
+            <>
+              <select
+                className="text-sm border rounded-md px-2 py-1"
+                value={selectedCycleId || ''}
+                onChange={(e) => setSelectedCycleId(e.target.value || null)}
+              >
+                <option value="">Select cycle</option>
+                {treatmentCycles.map((cycle) => (
+                  <option key={cycle.id} value={cycle.id}>
+                    {cycle.treatment_name} - Cycle {cycle.cycle_number}
+                  </option>
+                ))}
+              </select>
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => setShowAddCycleModal(true)}
+                title="Add new treatment cycle"
+              >
+                <Plus className="w-4 h-4" />
+              </Button>
+            </>
+          ) : (
+            <Button
+              size="sm"
+              variant="primary"
+              onClick={() => setShowAddCycleModal(true)}
             >
-              <option value="">Select cycle</option>
-              {treatmentCycles.map((cycle) => (
-                <option key={cycle.id} value={cycle.id}>
-                  {cycle.treatment_name} - Cycle {cycle.cycle_number}
-                </option>
-              ))}
-            </select>
+              <Plus className="w-4 h-4 mr-1" />
+              Create Treatment Cycle
+            </Button>
+          )}
             {selectedCycleId && (
               <>
                 <Button
@@ -223,8 +257,7 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
                 </Button>
               </>
             )}
-          </div>
-        )}
+        </div>
       </div>
 
       {/* Upcoming Procedures Summary */}
@@ -310,9 +343,24 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
                 <h3 className="text-lg font-medium text-secondary-900 mb-2">
                   No procedures scheduled
                 </h3>
-                <p className="text-secondary-500 mb-4">
-                  Select a treatment cycle above to generate a procedure schedule.
-                </p>
+                {treatmentCycles && treatmentCycles.length > 0 ? (
+                  <p className="text-secondary-500 mb-4">
+                    Select a treatment cycle above to generate a procedure schedule.
+                  </p>
+                ) : (
+                  <>
+                    <p className="text-secondary-500 mb-4">
+                      Create a treatment cycle first to start scheduling procedures.
+                    </p>
+                    <Button
+                      variant="primary"
+                      onClick={() => setShowAddCycleModal(true)}
+                    >
+                      <Plus className="w-4 h-4 mr-2" />
+                      Create Treatment Cycle
+                    </Button>
+                  </>
+                )}
               </CardContent>
             </Card>
           )}
@@ -419,6 +467,14 @@ export function ProceduresTab({ patientId }: ProceduresTabProps) {
           cycleStartDate={selectedCycle.start_date}
         />
       )}
+
+      {/* Add Treatment Cycle Modal */}
+      <AddTreatmentCycleModal
+        isOpen={showAddCycleModal}
+        onClose={() => setShowAddCycleModal(false)}
+        onSubmit={handleCreateTreatmentCycle}
+        patientId={patientId}
+      />
     </div>
   );
 }
