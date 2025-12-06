@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { TreatmentCycleCreate } from '@/types';
+import { TreatmentCycleCreate, TreatmentType } from '@/types';
 import { Button } from '@/components/ui';
 import { X, Loader2 } from 'lucide-react';
 
@@ -12,6 +12,14 @@ interface AddTreatmentCycleModalProps {
   patientId: string;
 }
 
+const TREATMENT_TYPES: { value: TreatmentType; label: string }[] = [
+  { value: 'chemotherapy', label: 'Chemotherapy' },
+  { value: 'immunotherapy', label: 'Immunotherapy' },
+  { value: 'targeted_therapy', label: 'Targeted Therapy' },
+  { value: 'radiation', label: 'Radiation' },
+  { value: 'surgery', label: 'Surgery' },
+];
+
 export function AddTreatmentCycleModal({
   isOpen,
   onClose,
@@ -21,11 +29,11 @@ export function AddTreatmentCycleModal({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<TreatmentCycleCreate>({
     treatment_name: '',
+    treatment_type: 'chemotherapy',
     cycle_number: 1,
     start_date: new Date().toISOString().split('T')[0],
-    expected_end_date: '',
-    status: 'ongoing',
-    notes: '',
+    regimen: '',
+    dose: '',
   });
 
   if (!isOpen) return null;
@@ -39,11 +47,11 @@ export function AddTreatmentCycleModal({
       // Reset form
       setFormData({
         treatment_name: '',
+        treatment_type: 'chemotherapy',
         cycle_number: 1,
         start_date: new Date().toISOString().split('T')[0],
-        expected_end_date: '',
-        status: 'ongoing',
-        notes: '',
+        regimen: '',
+        dose: '',
       });
     } catch (error) {
       console.error('Failed to create treatment cycle:', error);
@@ -80,6 +88,23 @@ export function AddTreatmentCycleModal({
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
+                Treatment Type *
+              </label>
+              <select
+                required
+                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                value={formData.treatment_type}
+                onChange={(e) => setFormData({ ...formData, treatment_type: e.target.value as TreatmentType })}
+              >
+                {TREATMENT_TYPES.map((type) => (
+                  <option key={type.value} value={type.value}>
+                    {type.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
                 Cycle Number *
               </label>
               <input
@@ -91,58 +116,44 @@ export function AddTreatmentCycleModal({
                 onChange={(e) => setFormData({ ...formData, cycle_number: parseInt(e.target.value) })}
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Status
-              </label>
-              <select
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                value={formData.status}
-                onChange={(e) => setFormData({ ...formData, status: e.target.value as 'ongoing' | 'completed' | 'cancelled' })}
-              >
-                <option value="ongoing">Ongoing</option>
-                <option value="completed">Completed</option>
-                <option value="cancelled">Cancelled</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Start Date *
-              </label>
-              <input
-                type="date"
-                required
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                value={formData.start_date}
-                onChange={(e) => setFormData({ ...formData, start_date: e.target.value })}
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Expected End Date
-              </label>
-              <input
-                type="date"
-                className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                value={formData.expected_end_date}
-                onChange={(e) => setFormData({ ...formData, expected_end_date: e.target.value })}
-              />
-            </div>
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Notes
+              Start Date *
             </label>
-            <textarea
+            <input
+              type="date"
+              required
               className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-              rows={3}
-              placeholder="Optional notes about this treatment cycle..."
-              value={formData.notes}
-              onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+              value={formData.start_date}
+              onChange={(e) => setFormData({ ...formData, start_date: e.target.value })}
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Regimen
+            </label>
+            <input
+              type="text"
+              className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+              placeholder="e.g., Every 3 weeks, Weekly"
+              value={formData.regimen || ''}
+              onChange={(e) => setFormData({ ...formData, regimen: e.target.value })}
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Dose
+            </label>
+            <input
+              type="text"
+              className="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+              placeholder="e.g., 175 mg/m², 200 mg"
+              value={formData.dose || ''}
+              onChange={(e) => setFormData({ ...formData, dose: e.target.value })}
             />
           </div>
 
