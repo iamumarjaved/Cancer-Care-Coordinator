@@ -113,6 +113,7 @@ resource "aws_ecs_task_definition" "backend" {
       { name = "CLERK_SECRET_KEY", valueFrom = "${var.secrets_arn}:CLERK_SECRET_KEY::" },
       { name = "LANGSMITH_API_KEY", valueFrom = "${var.secrets_arn}:LANGSMITH_API_KEY::" },
       { name = "SENDGRID_API_KEY", valueFrom = "${var.secrets_arn}:SENDGRID_API_KEY::" },
+      { name = "SENDGRID_FROM_EMAIL", valueFrom = "${var.secrets_arn}:SENDGRID_FROM_EMAIL::" },
     ]
 
     mountPoints = [{
