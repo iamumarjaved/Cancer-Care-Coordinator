@@ -7,10 +7,6 @@ environment     = "prod"
 domain_name     = "healthcare.umarjaved.me"
 route53_zone_id = "YOUR_ROUTE53_ZONE_ID"
 
-# Database
-db_username = "cancercare_admin"
-db_password = "YOUR_SECURE_PASSWORD"
-
 # Application Secrets
 openai_api_key        = "sk-..."
 clerk_secret_key      = "sk_live_..."

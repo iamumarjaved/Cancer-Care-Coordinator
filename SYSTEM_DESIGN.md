@@ -44,7 +44,7 @@ graph TB
     end
 
     subgraph Storage
-        DB[(SQLite DB)]
+        DB[(RDB)]
         VS[(Vector Store)]
     end
 

@@ -55,20 +55,7 @@ module "ecr" {
   environment  = var.environment
 }
 
-# Database Module
-module "database" {
-  source = "./modules/database"
-
-  project_name       = var.project_name
-  environment        = var.environment
-  vpc_id             = module.networking.vpc_id
-  private_subnet_ids = module.networking.private_subnet_ids
-  security_group_id  = module.security.rds_security_group_id
-  db_username        = var.db_username
-  db_password        = var.db_password
-}
-
-# Storage Module (EFS for ChromaDB)
+# Storage Module (EFS for ChromaDB + SQLite)
 module "storage" {
   source = "./modules/storage"
 
@@ -85,7 +72,7 @@ module "secrets" {
 
   project_name          = var.project_name
   environment           = var.environment
-  database_url          = module.database.connection_string
+  database_url          = "sqlite:////mnt/efs/cancer_care.db"
   openai_api_key        = var.openai_api_key
   clerk_secret_key      = var.clerk_secret_key
   clerk_publishable_key = var.clerk_publishable_key

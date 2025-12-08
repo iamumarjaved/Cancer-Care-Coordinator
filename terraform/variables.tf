@@ -48,19 +48,6 @@ variable "route53_zone_id" {
   default     = ""
 }
 
-# Database credentials
-variable "db_username" {
-  description = "Database master username"
-  type        = string
-  default     = "cancercare_admin"
-}
-
-variable "db_password" {
-  description = "Database master password"
-  type        = string
-  sensitive   = true
-}
-
 # Application secrets
 variable "openai_api_key" {
   description = "OpenAI API key"
